@@ -27,8 +27,12 @@ private:
 	float Health = 0.f;
 
 	UFUNCTION()
-	void DamageTaken(AActor* DamageTaken, float Damage, const UDamageType* DamageType, class AController* Instigator, AActor* DamageCauser);
+	void DamageTaken(AActor* DamagedActor, float Damage, const UDamageType* DamageType, class AController* Instigator, AActor* DamageCauser);
+	
+	
 
+
+	class AToonTanksGameMode* ToonTanksGameMode;
 
 public:	
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
