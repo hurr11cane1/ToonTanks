@@ -35,6 +35,9 @@ private:
 	class UParticleSystem* HitParticle;
 
 
+	UPROPERTY(VisibleAnywhere, Category = "Combat")
+	class UParticleSystemComponent* TrailParticles;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
